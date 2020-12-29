@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black;
+        }
+        .item{
+            width: 400px;
+            height: 247px;
+            border: 2px solid red;
+            position: relative;
+            
+            cursor: pointer;
+        }
+        .item:hover .bg_black{
+            opacity: 1;
+        }
+        .bg_black{
+            transition: 500ms;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(234, 137, 137, 0.8 );
+            color: white;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="item">
+            <div class="bg_black">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, odit!</p>
+            </div>
+            <img src="images/seaandwaves.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
